@@ -23,6 +23,16 @@ KKR TV is a modern, high-performance IPTV web application built with React and V
 - **Icons:** [Lucide React](https://lucide.dev/)
 - **Styling:** CSS3 with modern variables
 
+## 📋 Command Reference
+
+| Action | Command |
+| :--- | :--- |
+| **Install Dependencies** | `npm install` |
+| **Start Dev Server** | `npm run dev` |
+| **Build for Production** | `npm run build` |
+| **Preview Production Build** | `npm run preview` |
+| **Lint Code** | `npm run lint` |
+
 ## 📊 Data Source
 
 All channel and stream information is dynamically fetched from the [iptv-org API](https://iptv-org.github.io/api/).
@@ -52,7 +62,7 @@ To run KKR TV locally, follow these steps:
 
 ## 🌐 Deployment on Render
 
-This project is pre-configured for automatic deployment on [Render](https://render.com/).
+This project is pre-configured for automatic deployment on [Render](https://render.com/) as a **Static Site**.
 
 ### Automatic Deployment with Blueprint
 
@@ -64,7 +74,7 @@ This project is pre-configured for automatic deployment on [Render](https://rend
 
 If you prefer manual setup on Render:
 
-- **Service Type:** Static Site
+- **Service Type:** `Static Site`
 - **Build Command:** `npm install && npm run build`
 - **Publish Directory:** `dist`
 - **Routes:** Add a rewrite rule for `/*` to `/index.html` (for SPA support).
