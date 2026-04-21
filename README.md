@@ -1,16 +1,74 @@
-# React + Vite
+# KKR TV
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+KKR TV is a modern, high-performance IPTV web application built with React and Vite. It allows users to browse and stream thousands of free IPTV channels from around the world.
 
-Currently, two official plugins are available:
+### **Developer :- Kaustav Kanti Ray @iamkkronly**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Live Streaming:** Direct video playback for M3U8 streams using `hls.js`.
+- **Global Reach:** Access to thousands of channels across various categories and languages.
+- **Advanced Filtering:** Filter channels by category and language to find exactly what you want.
+- **Fast Search:** Instant search functionality to find your favorite channels.
+- **Responsive Design:** Optimized for both desktop and mobile devices.
+- **Privacy Focused:** Direct playback without revealing stream URLs to the end user.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Framework:** [React 19](https://react.dev/)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Video Playback:** [hls.js](https://github.com/video-dev/hls.js/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Styling:** CSS3 with modern variables
+
+## 📊 Data Source
+
+All channel and stream information is dynamically fetched from the [iptv-org API](https://iptv-org.github.io/api/).
+
+## 💻 Local Development
+
+To run KKR TV locally, follow these steps:
+
+1. **Clone the repository:**
+   ```bash
+   git clone <repository-url>
+   cd kkr-tv
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open in browser:**
+   Navigate to `http://localhost:5173`.
+
+## 🌐 Deployment on Render
+
+This project is pre-configured for automatic deployment on [Render](https://render.com/).
+
+### Automatic Deployment with Blueprint
+
+1. Push your code to a GitHub/GitLab repository.
+2. Connect your Render account to your repository.
+3. Render will automatically detect the `render.yaml` file and set up the static site.
+
+### Manual Configuration (if needed)
+
+If you prefer manual setup on Render:
+
+- **Service Type:** Static Site
+- **Build Command:** `npm install && npm run build`
+- **Publish Directory:** `dist`
+- **Routes:** Add a rewrite rule for `/*` to `/index.html` (for SPA support).
+
+---
+
+**Developed with ❤️ by Kaustav Kanti Ray (@iamkkronly)**
